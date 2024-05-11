@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Unreal\\BingoRPG_UnrealEngine\\Source\\BingoRPG\\BingoRPG.Build.cs",
-		"C:\\Unreal\\BingoRPG_UnrealEngine\\Source\\BingoRPG.Target.cs",
-		"C:\\Unreal\\BingoRPG_UnrealEngine\\Source\\BingoRPGEditor.Target.cs"
-	],
-	"EngineVersion": "4.27.2"
-}
