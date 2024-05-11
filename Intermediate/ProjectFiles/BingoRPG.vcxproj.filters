@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BingoRPG.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{A2A89925-7375-4EF7-917C-530036444545}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BingoRPG.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BingoRPGEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{51D6B075-1E55-4139-9950-EB1706B13D04}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BingoRPG">
+      <UniqueIdentifier>{FB031986-8356-41C1-A078-9DBB74F1C4B8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BingoRPG\BingoRPG.Build.cs">
+      <Filter>Source\BingoRPG</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BingoRPG\BingoRPG.cpp">
+      <Filter>Source\BingoRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BingoRPG\BingoRPG.h">
+      <Filter>Source\BingoRPG</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
