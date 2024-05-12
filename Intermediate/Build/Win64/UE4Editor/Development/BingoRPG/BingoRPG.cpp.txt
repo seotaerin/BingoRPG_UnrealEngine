@@ -1,2 +1,0 @@
-C:\Unreal\BingoRPG_UnrealEngine\Intermediate\Build\Win64\UE4Editor\Development\BingoRPG\Definitions.BingoRPG.h
-C:\Unreal\BingoRPG_UnrealEngine\Source\BingoRPG\BingoRPG.h
