@@ -15,15 +15,17 @@ class BINGORPG_API Acpp_fireball : public AActor
 public:	
 	Acpp_fireball();
 
-	UPROPERTY(VisibleAnywhere, Category = "Collision") USphereComponent* FireballColl;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation") UPaperFlipbookComponent* FireballImg;
+	UPROPERTY(VisibleAnywhere, Category = "Collision") USphereComponent* ballColl;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Animation") UPaperFlipbookComponent* ballImg;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Direction") UArrowComponent* root;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "throw") bool isThrowing=true;
 	UFUNCTION(BlueprintCallable, Category="Input") bool SetInputValue(const bool& InputValue);
 
 private:
 	FVector FireballVelocity;
 	FMatrix RotationMatrix;
 	bool inputvalue;
+	void throwBall(float deltatime);
 
 protected:
 	virtual void BeginPlay() override;
