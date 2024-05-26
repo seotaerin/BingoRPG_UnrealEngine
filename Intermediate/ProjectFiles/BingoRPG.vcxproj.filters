@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BingoRPG.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F22EEB33-6E98-443A-803E-774637FBCA89}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BingoRPG.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BingoRPGEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{D9AD4E14-37BB-4D7D-94E9-015E7F09A715}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BingoRPG">
+      <UniqueIdentifier>{8F8B525A-1385-4FED-BE21-9B2C3FCA1836}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BingoRPG\BingoRPG.Build.cs">
+      <Filter>Source\BingoRPG</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BingoRPG\BingoRPG.cpp">
+      <Filter>Source\BingoRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BingoRPG\BingoRPG.h">
+      <Filter>Source\BingoRPG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BingoRPG\cpp_fireball.cpp">
+      <Filter>Source\BingoRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BingoRPG\cpp_fireball.h">
+      <Filter>Source\BingoRPG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BingoRPG\cpp_Monster_Range.cpp">
+      <Filter>Source\BingoRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BingoRPG\cpp_Monster_Range.h">
+      <Filter>Source\BingoRPG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BingoRPG\RandomSpawn.cpp">
+      <Filter>Source\BingoRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BingoRPG\RandomSpawn.h">
+      <Filter>Source\BingoRPG</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

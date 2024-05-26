@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BingoRPG",
+			"Path": "C:\\Unreal\\BingoRPG_UnrealEngine\\Source\\BingoRPG.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BingoRPGEditor",
+			"Path": "C:\\Unreal\\BingoRPG_UnrealEngine\\Source\\BingoRPGEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

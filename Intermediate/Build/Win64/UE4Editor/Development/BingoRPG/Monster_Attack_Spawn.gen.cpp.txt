@@ -1,0 +1,5 @@
+C:\Unreal\BingoRPG_UnrealEngine\Intermediate\Build\Win64\UE4Editor\Development\BingoRPG\Definitions.BingoRPG.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Unreal\BingoRPG_UnrealEngine\Source\BingoRPG/Monster_Attack_Spawn.h
+C:\Unreal\BingoRPG_UnrealEngine\Intermediate\Build\Win64\UE4Editor\Inc\BingoRPG\Monster_Attack_Spawn.generated.h
