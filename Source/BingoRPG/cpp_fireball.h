@@ -31,6 +31,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Fireball") float FireballSpeed;
+	UFUNCTION(BlueprintNativeEvent, Category = "direction")
+	FVector ballRotation();
 
 public:	
 	virtual void Tick(float DeltaTime) override;

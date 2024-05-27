@@ -26,7 +26,7 @@ void Acpp_fireball::BeginPlay()
 	if(PlayerPawn)
 	{
 
-		FVector CharacterDirection = PlayerPawn->GetActorForwardVector();
+		FVector CharacterDirection = this->GetActorForwardVector();
 		FVector RotatedDirection = RotationMatrix.TransformVector(CharacterDirection);
 
 		FireballVelocity = RotatedDirection * FireballSpeed;
@@ -42,13 +42,18 @@ void Acpp_fireball::Tick(float DeltaTime)
 
 void Acpp_fireball::throwBall(float deltatime)
 {
-	FVector Direction = inputvalue ? -FVector::RightVector : FVector::RightVector;
-	FireballVelocity = Direction * FireballSpeed;
+	
+	FireballVelocity = ballRotation() * FireballSpeed;
 
 	FVector NewLocation = GetActorLocation() + (deltatime * FireballVelocity);
 	SetActorLocation(NewLocation);
 }
 
+FVector Acpp_fireball::ballRotation_Implementation()
+{
+	FVector Direction = inputvalue ? -FVector::RightVector : FVector::RightVector;
+	return Direction;
+}
 
 bool Acpp_fireball::SetInputValue(const bool& InputValue)
 {
