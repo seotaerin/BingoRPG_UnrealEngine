@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeRandomSpawn() {}
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbookComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	PAPER2D_API UClass* Z_Construct_UClass_APaperSpriteActor_NoRegister();
 // End Cross Module References
 	void ARandomSpawn::StaticRegisterNativesARandomSpawn()
 	{
@@ -46,6 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeRandomSpawn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_root_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_root;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpriteToSpawn_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_SpriteToSpawn;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -84,10 +90,18 @@ void EmptyLinkFunctionForGeneratedCodeRandomSpawn() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARandomSpawn_Statics::NewProp_root = { "root", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARandomSpawn, root), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARandomSpawn_Statics::NewProp_root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARandomSpawn_Statics::NewProp_root_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARandomSpawn_Statics::NewProp_SpriteToSpawn_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "RandomSpawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ARandomSpawn_Statics::NewProp_SpriteToSpawn = { "SpriteToSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARandomSpawn, SpriteToSpawn), Z_Construct_UClass_APaperSpriteActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ARandomSpawn_Statics::NewProp_SpriteToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARandomSpawn_Statics::NewProp_SpriteToSpawn_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARandomSpawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARandomSpawn_Statics::NewProp_MonsterRangeColl,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARandomSpawn_Statics::NewProp_MonsterAtkImg,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARandomSpawn_Statics::NewProp_root,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARandomSpawn_Statics::NewProp_SpriteToSpawn,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARandomSpawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARandomSpawn>::IsAbstract,
@@ -116,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeRandomSpawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARandomSpawn, 354901015);
+	IMPLEMENT_CLASS(ARandomSpawn, 2703576049);
 	template<> BINGORPG_API UClass* StaticClass<ARandomSpawn>()
 	{
 		return ARandomSpawn::StaticClass();

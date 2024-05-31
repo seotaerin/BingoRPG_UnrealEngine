@@ -23,6 +23,9 @@ public:
 	UPROPERTY(VisibleAnyWhere, BlueprintReadOnly, Category = "Animation") UPaperFlipbookComponent* MonsterAtkImg;
 	UPROPERTY(VisibleAnyWhere, BlueprintReadOnly, Category = "Direcrtion") UArrowComponent* root;
 
+	UPROPERTY(EditAnywhere, Category = "Spawning")
+	TSubclassOf<APaperSpriteActor> SpriteToSpawn;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -30,5 +33,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	void SpawnActor();
 
 };
